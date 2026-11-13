@@ -1,0 +1,16 @@
+# Selected live entries, 2026-11-13. Unrelated pins omitted.
+
+[/sys/kernel/debug/pinctrl/INTC1083:00/pins]
+pin 210 (GPP_B_6) 358:INTC1083:00 GPIO 0x84000201 0x0000005e 0x00000000
+pin 231 (GPP_D_2) 386:INTC1083:00 GPIO 0x04000300 0x00000072 0x00000000 [ACPI]
+pin 234 (GPP_D_5) 389:INTC1083:00 GPIO 0x04000300 0x00000075 0x00000000 [ACPI]
+
+[/sys/kernel/debug/pinctrl/INTC1083:00/pinmux-pins]
+pin 210 (GPP_B_6): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 231 (GPP_D_2): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 234 (GPP_D_5): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+
+[/sys/kernel/debug/pinctrl/INTC1083:00/pinconf-pins]
+pin 210 (GPP_B_6): input bias disabled
+pin 231 (GPP_D_2): input bias disabled, input bias high impedance
+pin 234 (GPP_D_5): input bias disabled, input bias high impedance

@@ -1,0 +1,29 @@
+# Selected live read-only inspection output, 2026-11-13.
+# No ACPI setter or power method was loaded/called.
+
+fw13_rtd3_probe: READ-ONLY probe: no power or policy changes
+fw13_rtd3_probe: \_SB.PC00.RP01.RD3C = 0x1 (1)
+fw13_rtd3_probe: \STD3 = 0x1 (1)
+fw13_rtd3_probe: \PGRT = 0x1 (1)
+fw13_rtd3_probe: \_SB.PC00.RP01.PRMV = 0x0 (0)
+fw13_rtd3_probe: \_SB.PC00.RP01.SLOT = 0x1 (1)
+fw13_rtd3_probe: \_SB.PC00.RP01.PRTP = 0x2 (2)
+fw13_rtd3_probe: \_SB.PC00.RP01.VDID = 0x7e388086 (2117632134)
+fw13_rtd3_probe: \S1RG = 0x141082 (1314946)
+fw13_rtd3_probe: \S1RP = 0x0 (0)
+fw13_rtd3_probe: \S1PG = 0x141085 (1314949)
+fw13_rtd3_probe: \S1PP = 0x1 (1)
+fw13_rtd3_probe: \_SB.PC00.RP01.SCLK = 0x0 (0)
+fw13_rtd3_probe: \_SB.PC00.RP01.WAKG = 0x0 (0)
+fw13_rtd3_probe: \_SB.PC00.RP01.WAKP = 0x0 (0)
+fw13_rtd3_probe: \_SB.PC00.RP01.WKEN = 0x0 (0)
+fw13_rtd3_probe: \PDOD = 0xc8 (200)
+fw13_rtd3_probe: \PEP0 = 0x64 (100)
+fw13_rtd3_probe: \PCHS = 0x6 (6)
+fw13_rtd3_probe: \_SB.PC00.RP01.RSTG = { 0x141082, 0x0 }
+fw13_rtd3_probe: \_SB.PC00.RP01.PWRG = { 0x141085, 0x1 }
+fw13_rtd3_probe: GNUM(0x141082) = 386 (ACPI GPIO number)
+fw13_rtd3_probe: GNUM(0x141085) = 389 (ACPI GPIO number)
+fw13_rtd3_probe: GNUM(0x141006) = 358 (ACPI GPIO number)
+fw13_rtd3_probe: Probe complete; missing/malformed objects: no; no changes made
+fw13_rtd3_probe: Read-only probe unloaded

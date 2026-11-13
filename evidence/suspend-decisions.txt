@@ -1,0 +1,28 @@
+# Selected actual trace events from the focused suspend test, 2026-11-13.
+# Grouped by noirq suspend callback, not a single global event sequence.
+# Pointer arguments and task/CPU columns omitted; trace-clock times retained.
+# Unrelated interleaved events omitted.
+
+[SSD 0000:a9:00.0]
+21357.926051: device_pm_callback_start: nvme 0000:a9:00.0, parent: 0000:00:1c.0, noirq bus [suspend]
+21357.936101: choose_enter: (acpi_pci_choose_state+0x4/0x40) device=<pointer omitted>
+21357.936102: sleep_enter: (acpi_pm_device_sleep_state+0x4/0x460) device=<pointer omitted> maximum=4
+21357.936334: sleep_exit: (acpi_pci_choose_state+0x2b/0x40 <- acpi_pm_device_sleep_state) state=3
+21357.936335: choose_exit: (pci_prepare_to_sleep+0xff/0x6c0 <- acpi_pci_choose_state) state=3
+21357.951040: device_pm_callback_end: nvme 0000:a9:00.0, err=0
+
+[Wi-Fi root port 0000:00:1c.5]
+21357.949219: device_pm_callback_start: pcieport 0000:00:1c.5, parent: pci0000:00, noirq bus [suspend]
+21357.949382: choose_enter: (acpi_pci_choose_state+0x4/0x40) device=<pointer omitted>
+21357.949384: sleep_enter: (acpi_pm_device_sleep_state+0x4/0x460) device=<pointer omitted> maximum=4
+21357.949745: sleep_exit: (acpi_pci_choose_state+0x2b/0x40 <- acpi_pm_device_sleep_state) state=4
+21357.949746: choose_exit: (pci_prepare_to_sleep+0xff/0x6c0 <- acpi_pci_choose_state) state=4
+21357.962366: device_pm_callback_end: pcieport 0000:00:1c.5, err=0
+
+[SSD root port 0000:00:1c.0]
+21357.951110: device_pm_callback_start: pcieport 0000:00:1c.0, parent: pci0000:00, noirq bus [suspend]
+21357.951221: choose_enter: (acpi_pci_choose_state+0x4/0x40) device=<pointer omitted>
+21357.951221: sleep_enter: (acpi_pm_device_sleep_state+0x4/0x460) device=<pointer omitted> maximum=4
+21357.951762: sleep_exit: (acpi_pci_choose_state+0x2b/0x40 <- acpi_pm_device_sleep_state) state=0
+21357.951763: choose_exit: (pci_prepare_to_sleep+0xff/0x6c0 <- acpi_pci_choose_state) state=0
+21357.953368: device_pm_callback_end: pcieport 0000:00:1c.0, err=0

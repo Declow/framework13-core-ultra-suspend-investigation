@@ -1,0 +1,15 @@
+# Keep firmware dumps, executable experiments, and unsanitized logs out.
+*.dat
+*.dsl
+*.asl
+*.aml
+*.cpio
+*.ko
+*.o
+*.log
+*.json
+*.pem
+*.key
+.env*
+raw/
+private/
